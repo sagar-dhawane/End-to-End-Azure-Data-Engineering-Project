@@ -31,7 +31,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "SELECT * from @{pipeline().parameters.Schema}.@{pipeline().parameters.Table}\n where @{activity('last_cdc').output} >\n  '@{activity('last_cdc').output.value[0].cdc}'",
+							"value": "SELECT * from @{pipeline().parameters.Schema}.@{pipeline().parameters.Table} where @{pipeline().parameters.cdc_col} >'@{activity('last_cdc').output.value[0].cdc}'\n",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",

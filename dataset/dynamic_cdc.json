@@ -1,5 +1,5 @@
 {
-	"name": "Json1",
+	"name": "dynamic_cdc",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

@@ -1,0 +1,9 @@
+{
+	"name": "SagarAzureDataFactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "61e511a6-f276-4177-ae94-189b7c50482d",
+		"tenantId": "1e59c397-a86d-49b0-84c4-6a1a67bc08f7"
+	}
+}
